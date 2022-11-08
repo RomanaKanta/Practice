@@ -8,7 +8,7 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
+    
     @IBOutlet weak var languageBtn: BorderView!
     
     @IBOutlet weak var changePwdBtn: BorderView!
@@ -27,14 +27,7 @@ class SettingsViewController: UIViewController {
     }
     
     @objc func languageBtnClick(sender : UITapGestureRecognizer) {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LanguageViewController") as! LanguageViewController
-        vc.modalPresentationStyle = .overCurrentContext
-        vc.view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
-        present(vc , animated: true , completion: nil)
         
-    }
-
-    @objc func changePwdBtnClick(sender : UITapGestureRecognizer) {
         let alertController = UIAlertController(title: "", message: nil, preferredStyle: .actionSheet)
         alertController.view.translatesAutoresizingMaskIntoConstraints = false
         
@@ -57,14 +50,22 @@ class SettingsViewController: UIViewController {
             alertController.view.superview?.subviews[0].addGestureRecognizer(tapGesture)
         }
     }
-
-        @objc func dismissAlertController(){
-            self.dismiss(animated: true, completion: nil)
-        }
-   
+    
+    @objc func changePwdBtnClick(sender : UITapGestureRecognizer) {
+        
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ChangePwdViewController") as! ChangePwdViewController
+        
+        navigationController?.pushViewController(vc, animated: true)
+//        present(vc , animated: true , completion: nil)
+        
+    }
+    @objc func dismissAlertController(){
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     @objc func contactBtnClick(sender : UITapGestureRecognizer) {
         
     }
-
+    
 }
 
