@@ -35,18 +35,32 @@ class SettingsViewController: UIViewController {
     }
 
     @objc func changePwdBtnClick(sender : UITapGestureRecognizer) {
-        let actionSheetController = UIAlertController(title: "", message: "", preferredStyle: .actionSheet)
-
-        let backView = actionSheetController.view.subviews.last?.subviews.last
-           backView?.layer.cornerRadius = 10.0
-           backView?.backgroundColor = UIColor.yellow
+        let alertController = UIAlertController(title: "", message: nil, preferredStyle: .actionSheet)
+        alertController.view.translatesAutoresizingMaskIntoConstraints = false
         
         
-            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LanguageViewController") as! LanguageViewController
-        actionSheetController.setValue(vc, forKey: "contentViewController")
-        self.present(actionSheetController, animated: true, completion: nil)
+        let backView = alertController.view.subviews.first?.subviews.first?.subviews.first
+        backView?.layer.cornerRadius = 10.0
+        backView?.backgroundColor = UIColor.white
+        
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LanguageViewController") as! LanguageViewController
+        
+        let constraints = [
+            alertController.view.heightAnchor.constraint(equalToConstant: 450),
+        ]
+        NSLayoutConstraint.activate(constraints)
+        
+        alertController.setValue(vc, forKey: "contentViewController")
+        
+        self.present(alertController, animated: true) {
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissAlertController))
+            alertController.view.superview?.subviews[0].addGestureRecognizer(tapGesture)
+        }
     }
-    
+
+        @objc func dismissAlertController(){
+            self.dismiss(animated: true, completion: nil)
+        }
    
     @objc func contactBtnClick(sender : UITapGestureRecognizer) {
         
