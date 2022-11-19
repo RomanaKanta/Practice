@@ -62,9 +62,16 @@ class SettingsViewController: UIViewController {
     @objc func dismissAlertController(){
         self.dismiss(animated: true, completion: nil)
     }
-    
+    var alert: CustomPopup!
     @objc func contactBtnClick(sender : UITapGestureRecognizer) {
-        
+        alert = CustomPopup.instanceFromNib()
+        alert.frame = self.view.bounds
+        self.view.addSubview(alert)
+        alert.popupBtn.addTarget(self, action:  #selector(removeAlert), for: .touchUpInside)
+    }
+    
+    @objc func removeAlert(){
+        alert.removeFromSuperview()
     }
     
 }

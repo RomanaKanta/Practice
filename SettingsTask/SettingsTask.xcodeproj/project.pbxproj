@@ -12,6 +12,8 @@
 		304BD044291A9F0400AC0EC2 /* LanguageTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304BD042291A9F0400AC0EC2 /* LanguageTableCell.xib */; };
 		304BD047291AB6C700AC0EC2 /* LanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304BD046291AB6C600AC0EC2 /* LanguageModel.swift */; };
 		304BD04A291ACE5D00AC0EC2 /* ChangePwdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304BD048291ACE5D00AC0EC2 /* ChangePwdViewController.swift */; };
+		309705152928DE830072D51C /* CustomPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309705142928DE830072D51C /* CustomPopup.xib */; };
+		309705172928DEDA0072D51C /* CustomPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309705162928DEDA0072D51C /* CustomPopup.swift */; };
 		309C053029194748008ECCD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C052F29194748008ECCD9 /* AppDelegate.swift */; };
 		309C053229194748008ECCD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C053129194748008ECCD9 /* SceneDelegate.swift */; };
 		309C053429194748008ECCD9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C053329194748008ECCD9 /* SettingsViewController.swift */; };
@@ -28,6 +30,8 @@
 		304BD042291A9F0400AC0EC2 /* LanguageTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageTableCell.xib; sourceTree = "<group>"; };
 		304BD046291AB6C600AC0EC2 /* LanguageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageModel.swift; sourceTree = "<group>"; };
 		304BD048291ACE5D00AC0EC2 /* ChangePwdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePwdViewController.swift; sourceTree = "<group>"; };
+		309705142928DE830072D51C /* CustomPopup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPopup.xib; sourceTree = "<group>"; };
+		309705162928DEDA0072D51C /* CustomPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopup.swift; sourceTree = "<group>"; };
 		309C052C29194748008ECCD9 /* SettingsTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SettingsTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		309C052F29194748008ECCD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		309C053129194748008ECCD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +82,15 @@
 			path = modelclass;
 			sourceTree = "<group>";
 		};
+		309705132928DE550072D51C /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				309705142928DE830072D51C /* CustomPopup.xib */,
+				309705162928DEDA0072D51C /* CustomPopup.swift */,
+			);
+			path = xib;
+			sourceTree = "<group>";
+		};
 		309C052329194748008ECCD9 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +110,7 @@
 		309C052E29194748008ECCD9 /* SettingsTask */ = {
 			isa = PBXGroup;
 			children = (
+				309705132928DE550072D51C /* xib */,
 				304BD045291AB6A400AC0EC2 /* modelclass */,
 				304BD040291A9ED600AC0EC2 /* cell */,
 				304BD03B291A4CCF00AC0EC2 /* controller */,
@@ -178,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309705152928DE830072D51C /* CustomPopup.xib in Resources */,
 				309C053C29194749008ECCD9 /* LaunchScreen.storyboard in Resources */,
 				309C053929194749008ECCD9 /* Assets.xcassets in Resources */,
 				304BD044291A9F0400AC0EC2 /* LanguageTableCell.xib in Resources */,
@@ -199,6 +214,7 @@
 				304BD047291AB6C700AC0EC2 /* LanguageModel.swift in Sources */,
 				304BD03F291A954F00AC0EC2 /* LanguageViewController.swift in Sources */,
 				309C053229194748008ECCD9 /* SceneDelegate.swift in Sources */,
+				309705172928DEDA0072D51C /* CustomPopup.swift in Sources */,
 				309C05492919525F008ECCD9 /* BorderView.swift in Sources */,
 				309C05442919500A008ECCD9 /* Extensions.swift in Sources */,
 			);
