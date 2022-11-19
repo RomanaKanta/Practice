@@ -9,7 +9,13 @@ import UIKit
 
 class CustomPopup: UIView {
 
-    @IBOutlet weak var rootBg: UIView!
+    var rootBg: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .black
+        view.layer.opacity = 0.8
+        return view
+    }()
     
     var popupBg: UIView = {
         let view = UIView()
@@ -54,14 +60,29 @@ class CustomPopup: UIView {
         return view
     }()
     
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setComponent()
+    }
     
-    class func instanceFromNib() -> CustomPopup {
-           let view = UINib(nibName: "CustomPopup", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! CustomPopup
-           view.setComponent()
-           return view
-       }
+    convenience init() {
+        self.init(frame: CGRect.zero)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setComponent()
+    }
+    
+    
+//    class func instanceFromNib() -> CustomPopup {
+//           let view = UINib(nibName: "CustomPopup", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! CustomPopup
+//           view.setComponent()
+//           return view
+//       }
     
     func setComponent() {
+        self.addSubview(rootBg)
         
         let stackView: UIStackView = UIStackView()
         stackView.axis = .vertical
@@ -95,6 +116,11 @@ class CustomPopup: UIView {
             popupBg.leadingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: -15),
             popupBg.bottomAnchor.constraint(equalTo: popupBtn.bottomAnchor, constant: 15),
             popupBg.trailingAnchor.constraint(equalTo: stackView.trailingAnchor, constant: 15),
+            
+            rootBg.topAnchor.constraint(equalTo: topAnchor),
+            rootBg.leadingAnchor.constraint(equalTo: leadingAnchor),
+            rootBg.bottomAnchor.constraint(equalTo: bottomAnchor),
+            rootBg.trailingAnchor.constraint(equalTo: trailingAnchor),
         ]
         
         NSLayoutConstraint.activate(constraints)

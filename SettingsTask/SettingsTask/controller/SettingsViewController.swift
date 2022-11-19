@@ -64,7 +64,8 @@ class SettingsViewController: UIViewController {
     }
     var alert: CustomPopup!
     @objc func contactBtnClick(sender : UITapGestureRecognizer) {
-        alert = CustomPopup.instanceFromNib()
+//        alert = CustomPopup.instanceFromNib()
+        alert = CustomPopup()
         alert.frame = self.view.bounds
         self.view.addSubview(alert)
         alert.popupBtn.addTarget(self, action:  #selector(removeAlert), for: .touchUpInside)
