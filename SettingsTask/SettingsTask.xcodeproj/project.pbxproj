@@ -7,11 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		304BD03F291A954F00AC0EC2 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304BD03E291A954F00AC0EC2 /* LanguageViewController.swift */; };
 		304BD043291A9F0400AC0EC2 /* LanguageTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304BD041291A9F0400AC0EC2 /* LanguageTableCell.swift */; };
 		304BD044291A9F0400AC0EC2 /* LanguageTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304BD042291A9F0400AC0EC2 /* LanguageTableCell.xib */; };
 		304BD047291AB6C700AC0EC2 /* LanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304BD046291AB6C600AC0EC2 /* LanguageModel.swift */; };
-		304BD04A291ACE5D00AC0EC2 /* ChangePwdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304BD048291ACE5D00AC0EC2 /* ChangePwdViewController.swift */; };
+		305FFED02931DC8000CDC4CC /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305FFECF2931DC8000CDC4CC /* ProgressBar.swift */; };
+		305FFED42931E56E00CDC4CC /* CustomProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305FFED32931E56E00CDC4CC /* CustomProgressBar.swift */; };
+		305FFED62931E9CE00CDC4CC /* SwiftyStarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305FFED52931E9CE00CDC4CC /* SwiftyStarRatingView.swift */; };
+		306CDDDA293642E6004A0EB5 /* LoanBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306CDDD9293642E6004A0EB5 /* LoanBaseViewController.swift */; };
+		306CDDDD29364323004A0EB5 /* LoanToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306CDDDC29364323004A0EB5 /* LoanToolbar.swift */; };
+		306CDDDF2936491F004A0EB5 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306CDDDE2936491F004A0EB5 /* StatusViewController.swift */; };
+		306CDDE229364DEB004A0EB5 /* LoanStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306CDDE029364DEB004A0EB5 /* LoanStatusCell.swift */; };
+		306CDDE329364DEB004A0EB5 /* LoanStatusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 306CDDE129364DEB004A0EB5 /* LoanStatusCell.xib */; };
+		306CDDE5293655B1004A0EB5 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306CDDE4293655B1004A0EB5 /* CustomLabel.swift */; };
+		306CDDE729368817004A0EB5 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306CDDE629368817004A0EB5 /* NotificationViewController.swift */; };
 		309705152928DE830072D51C /* CustomPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309705142928DE830072D51C /* CustomPopup.xib */; };
 		309705172928DEDA0072D51C /* CustomPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309705162928DEDA0072D51C /* CustomPopup.swift */; };
 		309C053029194748008ECCD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C052F29194748008ECCD9 /* AppDelegate.swift */; };
@@ -25,11 +33,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		304BD03E291A954F00AC0EC2 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 		304BD041291A9F0400AC0EC2 /* LanguageTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableCell.swift; sourceTree = "<group>"; };
 		304BD042291A9F0400AC0EC2 /* LanguageTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageTableCell.xib; sourceTree = "<group>"; };
 		304BD046291AB6C600AC0EC2 /* LanguageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageModel.swift; sourceTree = "<group>"; };
-		304BD048291ACE5D00AC0EC2 /* ChangePwdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePwdViewController.swift; sourceTree = "<group>"; };
+		305FFECF2931DC8000CDC4CC /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		305FFED32931E56E00CDC4CC /* CustomProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressBar.swift; sourceTree = "<group>"; };
+		305FFED52931E9CE00CDC4CC /* SwiftyStarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStarRatingView.swift; sourceTree = "<group>"; };
+		306CDDD9293642E6004A0EB5 /* LoanBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanBaseViewController.swift; sourceTree = "<group>"; };
+		306CDDDC29364323004A0EB5 /* LoanToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanToolbar.swift; sourceTree = "<group>"; };
+		306CDDDE2936491F004A0EB5 /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		306CDDE029364DEB004A0EB5 /* LoanStatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanStatusCell.swift; sourceTree = "<group>"; };
+		306CDDE129364DEB004A0EB5 /* LoanStatusCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoanStatusCell.xib; sourceTree = "<group>"; };
+		306CDDE4293655B1004A0EB5 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		306CDDE629368817004A0EB5 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		309705142928DE830072D51C /* CustomPopup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPopup.xib; sourceTree = "<group>"; };
 		309705162928DEDA0072D51C /* CustomPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopup.swift; sourceTree = "<group>"; };
 		309C052C29194748008ECCD9 /* SettingsTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SettingsTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,8 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				309C053329194748008ECCD9 /* SettingsViewController.swift */,
-				304BD03E291A954F00AC0EC2 /* LanguageViewController.swift */,
-				304BD048291ACE5D00AC0EC2 /* ChangePwdViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -80,6 +94,20 @@
 				304BD046291AB6C600AC0EC2 /* LanguageModel.swift */,
 			);
 			path = modelclass;
+			sourceTree = "<group>";
+		};
+		306CDDDB293642FC004A0EB5 /* loan */ = {
+			isa = PBXGroup;
+			children = (
+				306CDDD9293642E6004A0EB5 /* LoanBaseViewController.swift */,
+				306CDDDC29364323004A0EB5 /* LoanToolbar.swift */,
+				306CDDDE2936491F004A0EB5 /* StatusViewController.swift */,
+				306CDDE029364DEB004A0EB5 /* LoanStatusCell.swift */,
+				306CDDE129364DEB004A0EB5 /* LoanStatusCell.xib */,
+				306CDDE4293655B1004A0EB5 /* CustomLabel.swift */,
+				306CDDE629368817004A0EB5 /* NotificationViewController.swift */,
+			);
+			path = loan;
 			sourceTree = "<group>";
 		};
 		309705132928DE550072D51C /* xib */ = {
@@ -110,6 +138,7 @@
 		309C052E29194748008ECCD9 /* SettingsTask */ = {
 			isa = PBXGroup;
 			children = (
+				306CDDDB293642FC004A0EB5 /* loan */,
 				309705132928DE550072D51C /* xib */,
 				304BD045291AB6A400AC0EC2 /* modelclass */,
 				304BD040291A9ED600AC0EC2 /* cell */,
@@ -129,7 +158,10 @@
 		309C054729195245008ECCD9 /* widget */ = {
 			isa = PBXGroup;
 			children = (
+				305FFECF2931DC8000CDC4CC /* ProgressBar.swift */,
 				309C05482919525F008ECCD9 /* BorderView.swift */,
+				305FFED32931E56E00CDC4CC /* CustomProgressBar.swift */,
+				305FFED52931E9CE00CDC4CC /* SwiftyStarRatingView.swift */,
 			);
 			path = widget;
 			sourceTree = "<group>";
@@ -193,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				309705152928DE830072D51C /* CustomPopup.xib in Resources */,
+				306CDDE329364DEB004A0EB5 /* LoanStatusCell.xib in Resources */,
 				309C053C29194749008ECCD9 /* LaunchScreen.storyboard in Resources */,
 				309C053929194749008ECCD9 /* Assets.xcassets in Resources */,
 				304BD044291A9F0400AC0EC2 /* LanguageTableCell.xib in Resources */,
@@ -207,14 +240,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				305FFED42931E56E00CDC4CC /* CustomProgressBar.swift in Sources */,
 				309C053429194748008ECCD9 /* SettingsViewController.swift in Sources */,
-				304BD04A291ACE5D00AC0EC2 /* ChangePwdViewController.swift in Sources */,
+				306CDDE229364DEB004A0EB5 /* LoanStatusCell.swift in Sources */,
+				305FFED02931DC8000CDC4CC /* ProgressBar.swift in Sources */,
 				304BD043291A9F0400AC0EC2 /* LanguageTableCell.swift in Sources */,
 				309C053029194748008ECCD9 /* AppDelegate.swift in Sources */,
 				304BD047291AB6C700AC0EC2 /* LanguageModel.swift in Sources */,
-				304BD03F291A954F00AC0EC2 /* LanguageViewController.swift in Sources */,
+				306CDDE5293655B1004A0EB5 /* CustomLabel.swift in Sources */,
+				306CDDDF2936491F004A0EB5 /* StatusViewController.swift in Sources */,
+				306CDDDD29364323004A0EB5 /* LoanToolbar.swift in Sources */,
+				306CDDDA293642E6004A0EB5 /* LoanBaseViewController.swift in Sources */,
 				309C053229194748008ECCD9 /* SceneDelegate.swift in Sources */,
+				306CDDE729368817004A0EB5 /* NotificationViewController.swift in Sources */,
 				309705172928DEDA0072D51C /* CustomPopup.swift in Sources */,
+				305FFED62931E9CE00CDC4CC /* SwiftyStarRatingView.swift in Sources */,
 				309C05492919525F008ECCD9 /* BorderView.swift in Sources */,
 				309C05442919500A008ECCD9 /* Extensions.swift in Sources */,
 			);

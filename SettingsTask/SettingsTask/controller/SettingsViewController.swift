@@ -28,33 +28,35 @@ class SettingsViewController: UIViewController {
     
     @objc func languageBtnClick(sender : UITapGestureRecognizer) {
         
-        let alertController = UIAlertController(title: "", message: nil, preferredStyle: .actionSheet)
-        alertController.view.translatesAutoresizingMaskIntoConstraints = false
-        
-        
-        let backView = alertController.view.subviews.first?.subviews.first?.subviews.first
-        backView?.layer.cornerRadius = 10.0
-        backView?.backgroundColor = UIColor.white
-        
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LanguageViewController") as! LanguageViewController
-        
-        let constraints = [
-            alertController.view.heightAnchor.constraint(equalToConstant: 450),
-        ]
-        NSLayoutConstraint.activate(constraints)
-        
-        alertController.setValue(vc, forKey: "contentViewController")
-        
-        self.present(alertController, animated: true) {
-            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissAlertController))
-            alertController.view.superview?.subviews[0].addGestureRecognizer(tapGesture)
-        }
+//        let alertController = UIAlertController(title: "", message: nil, preferredStyle: .actionSheet)
+//        alertController.view.translatesAutoresizingMaskIntoConstraints = false
+//
+//
+//        let backView = alertController.view.subviews.first?.subviews.first?.subviews.first
+//        backView?.layer.cornerRadius = 10.0
+//        backView?.backgroundColor = UIColor.white
+//
+//        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LanguageViewController") as! LanguageViewController
+//
+//        let constraints = [
+//            alertController.view.heightAnchor.constraint(equalToConstant: 450),
+//        ]
+//        NSLayoutConstraint.activate(constraints)
+//
+//        alertController.setValue(vc, forKey: "contentViewController")
+//
+//        self.present(alertController, animated: true) {
+//            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissAlertController))
+//            alertController.view.superview?.subviews[0].addGestureRecognizer(tapGesture)
+//        }
     }
     
     @objc func changePwdBtnClick(sender : UITapGestureRecognizer) {
         
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ChangePwdViewController") as! ChangePwdViewController
+        let vc = StatusViewController()
         
+//        let vc = ProgressBarViewController()
+        vc.modalPresentationStyle = .fullScreen
         navigationController?.pushViewController(vc, animated: true)
 //        present(vc , animated: true , completion: nil)
         
