@@ -55,6 +55,8 @@ class SettingsViewController: UIViewController {
         
         let vc = StatusViewController()
         
+        vc.modalPresentationStyle = .pageSheet
+    
 //        let vc = ProgressBarViewController()
         vc.modalPresentationStyle = .fullScreen
         navigationController?.pushViewController(vc, animated: true)
